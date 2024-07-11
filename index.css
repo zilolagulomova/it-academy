@@ -2,14 +2,20 @@
 * {
     font-family: "Roboto", sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 .container {
     max-width: 1292px;
     padding-inline: 1rem;
     margin: 0 auto;
+    width: 100%;
 }
 .container2 {
     max-width: 1072px;
     margin: 0 auto;
+    width: 100%;
 }
 
 h3, h4, p {
@@ -31,15 +37,44 @@ h3, h4, p {
     z-index: -99;
 }
 
-.ul {
+.course-list {
     position: relative;
-    display: grid;
+    display: flex;
+    flex-shrink: 0;
+    gap: 12px;
+    justify-content: space-around;
+    min-width: 100;
+    /* display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) -12px);
-    gap: 20px;
+    grid-auto-columns: calc((100% / 3) -12px); */
+    /* overflow: hidden; */
+}
+
+.animation-list {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    gap: 12px;
+    justify-content: space-around;
+    min-width: 100;
+    /* display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) -12px); */
     overflow: hidden;
 }
-.linearLeft {
+
+.animation-list li {
+    animation: animate var(--t) linear infinite;
+    animation-delay: calc(var(--t) * -1);
+}
+
+.course-list img {
+    animation: animate var(--t) linear infinite;
+    animation-delay: calc(var(--t) * -1);
+}
+
+
+/* .linearLeft {
     background: linear-gradient(-270deg, #12161C -2.97%, rgba(18, 22, 28, 0.00) 100%);
     height: 100%;
     position: absolute;
@@ -59,11 +94,27 @@ h3, h4, p {
     width: 275px;
     z-index: 9;
     pointer-events: none;
+} */
+
+.course-card{
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(3px) !important;
+    background: hsla(0, 0%, 100%, .03) !important;
+    border: 1px solid hsla(0, 0%, 100%, .04) !important;
 }
-.ul li {
-    animation: animate var(--t) linear infinite;
-    animation-delay: calc(var(--t) * -1);
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 
 @keyframes animate
 {
@@ -77,3 +128,8 @@ h3, h4, p {
     }
 }
 
+@media only screen and (max-width: 1536px) {
+    .container2 {
+      padding-inline: 1rem;
+    }
+  }

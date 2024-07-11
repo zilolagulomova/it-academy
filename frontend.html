@@ -10,12 +10,22 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="relative">
     <!-- hero -->
-    <div class="bg-darkBlue-950 flex flex-col items-center justify-betwe relative">
+
+    <div class="bg-darkBlue-950 flex flex-col items-center justify-between">
         <header class="header bg-dark/20 backdrop-blur-smm border-b border-white/10 z-[999] w-full fixed">
             <div class="container relative flex items-center py-4 py-5.5 justify-between py-4">
-                <button class="flex items-center gap-2.5 group">
+                <!-- menu button -->
+                <div class="xl:hidden menuBtn flex flex-col group hover:bg-white/30 duration-300 items-start justify-center items-center  bg-white/20 rounded-10 w-[36px] h-[36px]">
+                    <button class="flex flex-col gap-y-1">
+                        <div class="bg-white w-[11px] rounded h-[2px] group-hover:w-[16px] duration-300"></div>
+                        <div class="bg-white w-[19px] rounded h-[2px]"></div>
+                        <div class="bg-white w-[16px] rounded h-[2px] group-hover:w-[11px] duration-300"></div>
+                    </button>
+                </div>
+                <!-- katigoriya button -->
+                <button class="flex items-center gap-2.5 group hidden xl:flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <rect class="group-hover:stroke-blue duration-300" x="4" y="4" width="6" height="6" rx="1"
                             stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
@@ -29,14 +39,30 @@
                     <p class="group-hover:text-blue duration-300 text-sm font-semibold leading-5">Kurslarimiz
                     </p>
                 </button>
-                <a href="#index.html">
+                <!-- uic logo mobile-->
+                <a href="#index.html"
+                    class="block shadow-4xl absolute left-2/4 -translate-x-2/4 top-1 md:hidden bg-dark-200 h-[110px] w-[110px] border border-white/10 rounded-full flex items-center justify-center">
+                    <img width="76" src="img/logo-mobile.svg" alt="">
+                </a>
+                <!-- uic logo desktop-->
+                <a href="#index.html" class="md:block hidden">
                     <img class="absolute top-0 left-2/4 -translate-x-2/4" src="img/logo.svg" alt="">
                 </a>
-                <div class="flex items-center gap-5">
+                <!-- mobile phone / call button -->
+                <div class="flex items-center gap-1 lg:hidden">
+                    <button class="bg-transparent border border-white/20 rounded-lg py-2.5 px-3 ">
+                        <img src="img/message.svg" alt="">
+                    </button>
+                    <a href="#applyForm" class="phone bg-blue px-3 py-2.5 rounded-lg">
+                        <img src="img/phone2.svg" alt="">
+                    </a>
+                </div>
+                <!-- desktop phone / call button -->
+                <div class="flex items-center gap-5 hidden xl:flex">
                     <a href="tel:+998338055995"
                         class="phone flex bg-transparent duration-300 items-center gap-2 border hover:shadow-4xl border-white/20 px-3 py-2.5 rounded-xl">
                         <img src="img/call-outline.png" alt="">
-                        <p class="text-sm font-semibold leading-5">+998 33 805 59 95</p>
+                        <p class="text-sm font-semibold hidden xl:block leading-5">+998 33 805 59 95</p>
                     </a>
                     <a href="#applyForm" class="phone bg-blue px-6 py-2.5 rounded-xl">
                         <button type="button" class="text-sm text-white font-medium leading-5">
@@ -47,9 +73,9 @@
             </div>
         </header>
         <div class="pt-64 relative">
-            <h3 class="text-6.5xl text-center leading-130 font-semibold">
+            <h3 class="text-4xl md:text-6.5xl text-center leading-130 font-semibold">
                 <span class="text-blue">
-                    << /span> Frontend Pro <span class="text-blue">/ ></span>
+                    < </span> Frontend <span class="text-blue">/ ></span>
             </h3>
         </div>
         <a href="#applyForm"
@@ -58,63 +84,68 @@
                 Ariza yuborish
             </button>
         </a>
-        <ul class="pb-12 ul pt-30 bottom-0 w-full" style="--t:15s">
-            <li class="">
-                <p class=""><span>
-                        << /span>Frontend Pro <span>/></span></p>
-            </li>
-            <li class="rounded-xl w-63 flex flex-col items-center gap-4 border border-white/10">
-                Backend Pro
-            </li>
-            <li class="rounded-xl w-63 flex flex-col items-center gap-4 border border-white/10">
-                Backend Pro
-            </li>
-        </ul>
+    </div>
+    <div class="pb-12 bg-darkBlue-950 course-list pt-30 w-full overflow-hidden" style="--t:45s">
+        <img src="img/___.png" width="250" alt="">
+        <img src="img/___.png" width="250" alt="">
+        <img src="img/___.png" width="250" alt="">
+        <img src="img/___.png" width="250" alt="">
+        <img src="img/___.png" width="250" alt="">
+        <img src="img/___.png" width="250" alt="">
+        <img src="img/___.png" width="250" alt="">
+        <img src="img/___.png" width="250" alt="">
+        <img src="img/___.png" width="250" alt="">
+        <img src="img/___.png" width="250" alt="">
     </div>
     <section class="bg-darkBlue-900">
         <div class="container2 pt-12 pb-8">
-            <h3 class="text-3xl font-bold leading-130 text-center">Bizning reja <span
+            <h3 class="text-2xl md:text-3xl font-bold leading-130 text-center pb-8">Bizning reja <span
                     class="border ml-1.5 border-blue py-2 px-3 rounded-lg"> raqamlarda</span></h3>
-            <ul class="list flex flex-wrap w-full pt-12 gap-5">
-                <li class="bg-darkBlue-800 w-full max-w-[253px] rounded-10 py-4 px-6">
-                    <h3 class="text-blue text-4.8xl font-bold">
+            <ul class="list grid grid-cols-1 sm:grid-cols-4 w-full gap-5">
+                <li class="bg-darkBlue-800 w-full rounded-10 py-4 px-6">
+                    <h3 class="text-blue text-2xl md:text-4.8xl font-bold mb-1 leading-130 lg:leading-[55px]">
                         80+
                     </h3>
-                    <p class="opacity-78 leading-130 opacity-70 tracking-[0.38px] leading-6">Amaliy vazifalar</p>
+                    <p class="opacity-78 leading-130 text-sm md:text-base opacity-70 tracking-[0.38px] leading-6">Amaliy
+                        vazifalar</p>
                 </li>
-                <li class="bg-darkBlue-800 w-full max-w-[253px] rounded-10 py-4 px-6">
-                    <h3 class="text-blue text-4.8xl font-bold">
+                <li class="bg-darkBlue-800 w-full rounded-10 py-4 px-6">
+                    <h3 class="text-blue text-2xl md:text-4.8xl font-bold mb-1 leading-130 lg:leading-[55px]">
                         55+
                     </h3>
-                    <p class="opacity-78 leading-130 opacity-70 tracking-[0.38px] leading-6">Uyga vazifalar</p>
+                    <p class="opacity-78 leading-130 text-sm md:text-base opacity-70 tracking-[0.38px] leading-6">Uyga
+                        vazifalar</p>
                 </li>
-                <li class="bg-darkBlue-800 w-full max-w-[253px] rounded-10 py-4 px-6">
-                    <h3 class="text-blue text-4.8xl font-bold">
+                <li class="bg-darkBlue-800 w-full rounded-10 py-4 px-6">
+                    <h3 class="text-blue text-2xl md:text-4.8xl font-bold mb-1 leading-130 lg:leading-[55px]">
                         3+
                     </h3>
-                    <p class="opacity-78 leading-130 opacity-70 tracking-[0.38px] leading-6">Portfolio loyihalari</p>
+                    <p class="opacity-78 leading-130 text-sm md:text-base opacity-70 tracking-[0.38px] leading-6">
+                        Portfolio loyihalari</p>
                 </li>
-                <li class="bg-darkBlue-800 w-full max-w-[253px] rounded-10 py-4 px-6">
-                    <h3 class="text-blue text-4.8xl font-bold">
+                <li class="bg-darkBlue-800 w-full rounded-10 py-4 px-6">
+                    <h3 class="text-blue text-2xl md:text-4.8xl font-bold mb-1 leading-130 lg:leading-[55px]">
                         6 oy
                     </h3>
-                    <p class="opacity-78 leading-130 opacity-70 tracking-[0.38px] leading-6">Kurs davomiyligi</p>
+                    <p class="opacity-78 leading-130 text-sm md:text-base opacity-70 tracking-[0.38px] leading-6">Kurs
+                        davomiyligi</p>
                 </li>
             </ul>
         </div>
     </section>
     <section class="bg-dark-100 py-16">
         <div class="container2">
-            <div class="flex items-start justify-center gap-5 pb-32">
+            <div class="grid grid-cols-1 lg:grid-cols-3  gap-5 ">
                 <div class="flex flex-col gap-5">
-                    <div class="w-88 bg-darkBlue-800 py-4 pl-5 rounded-10 relative">
+                    <div class="w-full lg:max-w-88 bg-darkBlue-800 py-4 pl-5 rounded-10 relative">
                         <p class="text-blue text-xs leading-13 mb-0.5">Kurs nomi</p>
                         <h4 class="text-xl font-bold leading-130">
-                            Frontend Pro
+                            Frontend
                         </h4>
                         <img class="absolute right-1 top-2" width="64" src="img/device-laptop.png" alt="">
                     </div>
-                    <div class="w-88 h-50 relative bg-[url('img/image1.jpg')] bg-contain">
+                    <div
+                        class="w-full lg:max-w-88 h-50 relative bg-[url('img/image1.jpg')] bg-cover bg-top-center lg:bg-contain bg-no-repeat lg:bg-center">
                         <div class="bg-dark-100/70 w-full absolute top-0 h-full"></div>
                         <div class="relative flex items-center justify-center h-full">
                             <div>
@@ -124,7 +155,7 @@
                         </div>
                     </div>
                     <div class="flex gap-5">
-                        <div class="bg-darkBlue-800 rounded-10 flex flex-col items-center w-1/2 h-[99px]">
+                        <div class="bg-darkBlue-800 rounded-10 flex flex-col items-center w-full h-[99px]">
                             <img class="my-1.5" width="29" src="img/ChatGPT_logo 1.svg" alt="">
                             <h4 class="font-semibold leading-130 mt-1 mb-[2px] text-center text-base">ChatGPT</h4>
                             <p class="text-xs leading-130 text-center opacity-60 mb-[2px]">suniy intelekt bilan ishlash
@@ -132,7 +163,7 @@
                             </p>
                         </div>
                         <div
-                            class="bg-darkBlue-800 rounded-10 flex flex-col items-center justify-center w-1/2 h-[99px] bg-[url('img/gift.png')] bg-no-repeat bg-center">
+                            class="bg-darkBlue-800 rounded-10 flex flex-col items-center justify-center w-full h-[99px] bg-[url('img/gift.png')] bg-no-repeat bg-center">
                             <p class="text-xs leading-130 text-center opacity-60">O‘quvchilar uchun maxsus
                             <h4 class="font-semibold leading-130 text-center text-base">Giftbox</h4>
                             </p>
@@ -160,7 +191,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-5 ">
-                    <div class="w-88 bg-darkBlue-800 py-4 pl-5 rounded-10 relative">
+                    <div class="w-full lg:max-w-88 bg-darkBlue-800 py-4 pl-5 rounded-10 relative">
                         <p class="text-blue text-xs leading-13 mb-0.5">Kurs davomiyligi</p>
                         <h4 class="text-xl font-bold leading-130">
                             6 oy
@@ -169,47 +200,50 @@
                     </div>
                     <div class="h-[315px] bg-darkBlue-800 rounded-10 flex flex-col items-center justify-center ">
                         <h4 class="text-xl font-bold leading-130 text-center">
-                            <span class="text-blue">< </span>Frontend plus <span class="text-blue"> /></span>
-                                kursida
+                            <span class="text-blue">
+                                < </span>Frontend <span class="text-blue"> /></span>
+                                    kursida
                         </h4>
-                        <h3 class="font-black text-7xl">Siz</h3>
+                        <h3 class="font-bold text-5.5xl md:text-7xl">Siz</h3>
                     </div>
                     <div class="flex gap-5">
-                        <div class="bg-darkBlue-800 pt-4 pl-4 overflow-hidden rounded-10 w-42 h-30 relative">
-                            <img class="bottom-0 right-0 absolute" width="64" src="img/book.png" alt="">
+                        <div class="bg-darkBlue-800 pt-4 pl-4 overflow-hidden rounded-10 w-full max-w-42 h-30 relative">
+                            <img class="bottom-0 right-0 absolute" width="80" src="img/book.png" alt="">
                             <p class="text-xs leading-130 opacity-60">Modullar soni</p>
-                            <h4 class="font-semibold text-4.5xl leading-130">9</h4>
+                            <h4 class="font-semibold text-4.5xl leading-130">4</h4>
                         </div>
-                        <div class="bg-darkBlue-800 rounded-10 w-42">
+                        <div class="bg-darkBlue-800 rounded-10 w-full max-w-42">
                             <h3 class="text-blue text-center text-4.8xl font-bold">114</h3>
                             <h3 class="text-center text-base leading-130 font-medium">mavzudagi darslar</h3>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-5 ">
-                    <div class="w-88 bg-darkBlue-800 py-4 pl-5 rounded-10 relative">
+                <div class="flex flex-col gap-5">
+                    <div class="w-full lg:max-w-88 bg-darkBlue-800 pt-4 pb-1 pl-5 rounded-10 relative">
                         <p class="text-blue text-xs leading-13 mb-0.5">Texnalogiyalar</p>
                         <img src="img/course.png" width="140" alt="">
                         <img class="absolute right-1 top-2" width="64" src="img/code.png" alt="">
                     </div>
                     <div class="flex gap-5 items-start">
-                        <div class="bg-darkBlue-800 pt-4 pl-4 rounded-10 w-42 h-40 relative">
-                            <img class="top-9 -right-1 absolute" width="63" src="img/brend.png" alt="Yil brendi">
-                            <h4 class="font-bold text-[15.5px] leading-130">"Yil Brendi"</h4>
-                            <p class="text-[11px] text-darkBlue-200 leading-130">Mukofot sovrindori</p>
+                        <div
+                            class="bg-darkBlue-800 rounded-10 w-full max-w-42 h-40 relative flex items-center justify-start flex-col">
+                            <img class="mt-5 mb-3" width="52" src="img/lock-open.png" alt="uic">
+                            <h4 class="font-bold text-[15.5px] leading-130">$23 000</h4>
+                            <p class="text-[11px] text-darkBlue-200 leading-130 mt-1">qiymatga ega resurs</p>
                         </div>
-                        <div class="flex flex-col gap-5">
-                            <div class="bg-darkBlue-800 py-4 px-4 w-42 rounded-10">
+                        <div class="flex flex-col gap-5 w-full">
+                            <div class="bg-darkBlue-800 py-4 px-4 w-full max-w-42 rounded-10">
                                 <p class="text-sm font-medium leading-130 text-center"><span class="text-blue">Speed
-                                    </span>TOP</p>
+                                    </span>app</p>
                             </div>
-                            <div class="bg-darkBlue-800 py-4 px-4 w-42 rounded-10">
-                                <p class="text-base opacity-60 leading-130 text-center">Barqaror</p>
-                                <h4 class="text-2xl font-semibold leading-130 text-center uppercase">top 100</h4>
+                            <div
+                                class="bg-darkBlue-800 py-4 px-4 w-full max-w-42 rounded-10 min-h-[80px] flex items-center">
+                                <p class="text-base opacity-60 leading-130 text-center">Qo‘llab-quvvatlash</p>
                             </div>
                         </div>
                     </div>
-                    <div class="w-88 h-37 relative bg-[url('img/image2.jpg')] bg-contain">
+                    <div
+                        class="w-full lg:max-w-88 h-37 relative bg-[url('img/image2.jpg')] bg-cover bg-no-repeat bg-center lg:bg-contain">
                         <div class="h-full top-0 w-full bg-gradient-to-b from-dark-100/20 to-dark-100/80 absolute">
                         </div>
                         <div class="relative top-1/2 p-4">
@@ -217,84 +251,376 @@
                             <h3 class="text-lg font-bold leading-130">Open Space’lar</h3>
                         </div>
                     </div>
-                    <div class="w-88 h-30 bg-darkBlue-800 pt-4 pl-5 rounded-10 relative flex ">
+                    <div class="w-full lg:max-w-88 h-30 bg-darkBlue-800 pt-4 pl-5 rounded-10 relative flex relative">
                         <div>
-                            <p class="opacity-60 text-xs leading-130 mb-1">Ijtimoiy loyihalarga doimiy hamkor</p>
-                            <h4 class="text-xll font-semibold leading-130">
-                                100’dan ortiq bepul
-                                loyihalar muallifi
+                            <p class="opacity-60 text-xs leading-130 mb-1">Muvaffaqiyatli tugatgan har bir bitiruvchiga
+                            </p>
+                            <h4 class="text-xl font-semibold leading-130 ">
+                                Ishga kirishiga yordam <br>
+                                beramiz
                             </h4>
                         </div>
-                        <img class="" width="109" src="img/tahsin.png" alt="Tahsin">
+                        <img class="absolute bottom-5 right-0" width="64" src="img/Suitcase.svg" alt="uic">
                     </div>
                 </div>
             </div>
-            <div class="relative">
-                <div class="absolute bg-[#1d71eea9] h-5 opacity-50 blur-lg left-40 top-1/3 w-13 pb-4"></div>
-                <div class="absolute bg-[#1d71eea9] h-5 opacity-50 blur-lg right-40 top-1/3 w-13 pb-4"></div>
-                <h3 class="relative text-center mb-8 text-4.5xl font-extrabold">
-                    Shuningdek
-                </h3>
+    </section>
+
+    <section class="bg-darkBlue-900 py-12 bg-[url('img/course-bg.svg')] bg-no-repeat bg-right">
+        <div class="container2">
+            <h3 class="text-xl md:text-2xl lg:text-3.5xl font-bold leading-130 text-center pb-9">Frontend plus kursi
+                kimlar uchun?</h3>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <li class=" border border-white/5 relative py-2.5 px-4 rounded-lg course-card">
+                    <span class="bg-blue h-[28px] w-[4px] absolute left-0 left1/2 rounded-2.5xl"></span>
+                    <p>Junior bosqichida bilimi bor xodimlar</p>
+                </li>
+                <li class=" border border-white/5 relative py-2.5 px-4 rounded-lg course-card">
+                    <span class="bg-blue h-[28px] w-[4px] absolute left-0 left1/2 rounded-2.5xl"></span>
+                    <p>Middle darajadagi bilimlarga ega bo'lmoqchi bo'lgan uchun</p>
+                </li>
+                <li class="border border-white/5 relative py-2.5 px-4 rounded-lg course-card">
+                    <span class="bg-blue h-[28px] w-[4px] absolute left-0 left1/2 rounded-2.5xl"></span>
+                    <p>0 dan dasturlashni o'rganmoqchi bo'lganlar uchun</p>
+                </li>
+                <li class="border border-white/5 relative py-2.5 px-4 rounded-lg course-card">
+                    <span class="bg-blue h-[28px] w-[4px] absolute left-0 left1/2 rounded-2.5xl"></span>
+                    <p>O'qiyotgan kurslaridan qoniqmayotganlar uchun</p>
+                </li>
+                <li class="border border-white/5 relative py-2.5 px-4 rounded-lg course-card">
+                    <span class="bg-blue h-[28px] w-[4px] absolute left-0 left1/2 rounded-2.5xl"></span>
+                    <p>Sifatli ta'lim olmoqchi bo'lganlar uchun</p>
+                </li>
+                <li class="border border-white/5 relative py-2.5 px-4 rounded-lg course-card">
+                    <span class="bg-blue h-[28px] w-[4px] absolute left-0 left1/2 rounded-2.5xl"></span>
+                    <p>IT kompaniya muhitini bilmoqchi bo'lganlar uchun</p>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-dark py-12">
+        <div class="container2">
+            <h3 class="text-3.5xl font-bold leading-130">Modullar</h3>
+            <p class="opacity-60 text-base leading-130 mt-1 mb-8">Kurs davomida o‘tilishi rejalashtirilgan modullar
+                ro‘yxati</p>
+            <div class="bg-white/5 rounded-10 border border-white/20 ">
+                <div class="border-b border-white/10 mx-6 flex items-center justify-between py-7 cursor-pointer">
+                    <h4 class="text-2xl font-bold leading-130">
+                        1. Modul - Javascript
+                    </h4>
+                    <div class="bg-white/20 w-10 h-10 flex items-center justify-center rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M19.833 16.3334L13.9997 11.6667L8.16634 16.3334" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <ul class="py-5 px-6 grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-7">
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">HTML 5 & CSS</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">All important tags</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">Float, flexbox va grid</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">Position proports</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">Git va Github</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">CSS responsive</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">JavaScript Conditionals</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">Logical operators</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">JavaScript Loops</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">Hosting</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">JavaScript Arrays</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">JavaScript Functions</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">JavaScript Objects</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">Array methods (forEach, filter, map, sort, reduce)</p>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <img src="img/Circle.svg" alt="">
+                        <p class="leading-130">Chaining</p>
+                    </li>
+                </ul>
             </div>
-            <ul class="flex items-start justify-center gap-5 flex-wrap">
-                <li class="w-88 h-62 border border-white/8 p-6 rounded-xl flex flex-col justify-between">
-                    <h4 class="text-xl font-bold leading-140">Loyihalarni topish, tenderlarda qatnashish va loyihani
-                        muvaffaqiyatli bajarish
+            <div class="bg-white/5 rounded-10 border border-white/20  mt-6">
+                <div class="border-b border-white/10 mx-6 flex items-center justify-between py-7 cursor-pointer">
+                    <h4 class="text-2xl font-bold leading-130">
+                        1. Modul - Javascript
                     </h4>
-                    <div>
-                        <span class="w-32 bg-white opacity-20 h-px flex mt-6 mb-4"></span>
-                        <img src="img/world.svg" width="48" alt="uic">
+                    <div class="bg-white/20 w-10 h-10 flex items-center justify-center rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M19.833 16.3334L13.9997 11.6667L8.16634 16.3334" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-darkBlue-900 py-12">
+        <div class="container2">
+            <h3 class="text-2xl md:text-3.5xl font-roboto leading-130 text-center font-bold">Professional mentorlar</h3>
+            <p class="text-white/60 text-sm sm:text-base text-center leading-130">Har bir modulni jamoamizdagi shuni
+                modulni eng yaxshi
+                qiladigan mutaxassissi mentorlikqiladi</p>
+            <div class="pb-16">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-8 gap-5 w-full ">
+                    <li
+                        class="bg-darkBlue-800 w-full rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/alisher.png" alt="Alisher Tojiyev">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Alisher <br> Tojiyev</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">IT Doctor</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/murodxoja.png" alt="Alisher Tojiyev">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Muratov <br> Murodxo’ja</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">Software engineer</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/Amon.png" alt="Olimov Amon">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Olimov <br> Amon</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">Software engineer</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/jas.png" alt="Urolboyev Jasurbek">
+                        <h3 class="font-bold text-2xl pt-5.5">Urolboyev <br> Jasurbek</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">PMO</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/elzod.png" alt="Elzodxon Sharofaddinov">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Elzodxon <br> Sharofaddinov</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">Software engineer</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/sanjar.png" alt="Sanjar Barakayev">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Sanjar <br> Barakayev</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">Software engineer</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/manucheh.png" alt="Manuchehr Raupov">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Manuchehr <br> Raupov</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">Software engineer</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/kilichbek.png" alt="Kurbanov Kilichbek">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Kurbanov <br> Kilichbek</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">QA engineer</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/jasur.png" alt="Narzullaev Jasurbek">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Narzullaev <br> Jasurbek</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">UI/UX supervisor</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/jahongir.png" alt="Jahongir Sagdullayev">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Jahongir <br> Sagdullayev</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">Software engineer</p>
+                    </li>
+                    <li class="bg-darkBlue-800 rounded-lg px-4 pt-5 pb-6 flex flex-col items-center justify-center ">
+                        <img width="160" src="img/sardor.png" alt="Sardor Berdiyev">
+                        <h3 class="font-bold text-center text-2xl pt-5.5">Sardor <br>Berdiyev</h3>
+                        <p class="pt-3 opacity-40 font-semibold leading-130 text-xs">PMO</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark pb-16">
+        <div class="container2 pt-10">
+            <div id="applyForm" class="flex flex-col md:flex-row justify-center gap-4 bg-darkBlue-800 rounded-2.5xl">
+                <div class="bg-darkBlue-800 p-8 rounded-2.5xl w-full">
+                    <p class="opacity-60 text-base leading-130 mb-2">SIZGA QANDAY YORDAM BERA OLAMIZ?</p>
+                    <h4 class="font-semibold text-2.5xl leading-130">Biz bilan kurs tanlang!</h4>
+                    <div class="border border-gray-100 mt-4 rounded-xl p-4 flex items-center max-w-[486px] gap-3">
+                        <img src="img/uzum.svg" alt="Uzum Nasiya">
+                        <p class="text-sm"><a href="https://uzumnasiya.uz/" class="text-blue ">Uzum Nasiya </a>orqali
+                            muddatli to’lov
+                            asosida xarid qilishingiz mumkin</p>
+                    </div>
+                </div>
+                <div class="bg-darkBlue-700 border border-white/20 rounded-2.5xl w-full p-8">
+                    <form class=''>
+                        <select
+                            class="appearance-none outline-none bg-transparent text-blue-100 px-4 py-3.5 border border-gray-100 w-full rounded-lg">
+                            <option value="kurslar">Kurslar</option>
+                            <option value="mobilePlus">Mobile Plus</option>
+                            <option value="backendPlus">Backend Plus</option>
+                            <option value="frontendPlus">Frontend Plus</option>
+                            <option value="backend">Backend</option>
+                            <option value="frontend">Frontend</option>
+                        </select>
+                        <input
+                            class="outline-none bg-transparent text-blue-100 px-4 py-3.5 border border-gray-100 w-full rounded-lg mt-5"
+                            type="text" placeholder="Ismingizni kiriting">
+                        <input
+                            class="appearance-none outline-none bg-transparent text-blue-100 px-4 py-3.5 border border-gray-100 w-full rounded-lg mt-5"
+                            type="number" placeholder="+998">
+                        <button type="button"
+                            class="text-sm text-white font-medium leading-5 phone bg-blue px-6 py-3.5 rounded-lg w-full mt-11">
+                            Yuborish
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex items-center mt-16 bg-darkBlue-800 p-10 rounded-2.5xl justify-between">
+                <div class="">
+                    <h3 class="text-3.5xl font-bold leading-130">Kurs bo’yicha savollaringiz qoldimi?</h3>
+                    <p class="font-medium text-xl max-w-[517px] pt-6">Barcha savollaringizga quyidagi tugma orqali
+                        menejerimizdan
+                        javob olasiz</p>
+                </div>
+                <a href="#applyForm"
+                    class="flex items-center justify-center flex-col mt-6 bg-blue/30 hover:bg-blue w-full max-w-[258px] duration-300 backdrop-blur-lg border border-blue px-6 py-2.5 rounded-xl">
+                    <button type="button" class="text-sm font-semibold leading-5 text-white">
+                        Qo‘ng‘iroq qilish
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-darkBlue-900 border-b border-white/10">
+        <div class="container2 pt-12 pb-16">
+            <h3 class="font-black text-3.5xl leading-130 mb-8">Boshqa aktual kurslar</h3>
+            <ul class="gap-5 gap-y-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 courses">
+                <li class="bg-darkBlue-800 relative w-full group border border-white/8 p-5 pr-10 rounded-xl">
+                    <a href="frontend.html" class="flex items-center justify-between">
+                        <div class="relative flex flex-col items-start justify-start">
+                            <p class="font-medium text-base leading-130 opacity-80 pb-4">Kurs</p>
+                            <h4 class="text-xl text-center font-bold group-hover:text-blue duration-200 mb-6">
+                                Mobile Plus
+                            </h4>
+                            <p class="font-medium text-base leading-130 opacity-80">Davomiyligi: 6 oy</p>
+                        </div>
+                        <div>
+                            <img class=" grayscale duration-200 group-hover:grayscale-0" src="img/flutter.png"
+                                alt="Flutter Icon" width="45">
+                        </div>
+                    </a>
                 </li>
-                <li class="w-88 h-62 border border-white/8 p-6 rounded-xl flex flex-col justify-between">
-                    <h4 class="text-xl font-bold leading-140">UI/UX bilimlarini o’rganib saytlarni go’zallashtirish
-                    </h4>
-                    <div>
-                        <span class="w-32 bg-white opacity-20 h-px flex mt-6 mb-4"></span>
-                        <img src="img/brush.png" width="48" alt="uic">
-                    </div>
+                <li class="bg-darkBlue-800 relative w-full group border border-white/8 p-5 pr-10 rounded-xl">
+                    <a href="frontend.html" class="flex items-center justify-between">
+                        <div class="relative flex flex-col items-start justify-start">
+                            <p class="font-medium text-base leading-130 opacity-80 pb-4">Kurs</p>
+                            <h4 class="text-xl text-center font-bold group-hover:text-blue duration-200 mb-6">
+                                Backend Pro
+                            </h4>
+                            <p class="font-medium text-base leading-130 opacity-80">Davomiyligi: 6 oy</p>
+                        </div>
+                        <div>
+                            <img class=" grayscale duration-200 group-hover:grayscale-0" src="img/python2.png"
+                                alt="Flutter Icon" width="48">
+                        </div>
+                    </a>
                 </li>
-                <li class="w-88 h-62 border border-white/8 p-6 rounded-xl flex flex-col justify-between">
-                    <h4 class="text-xl font-bold leading-140">Freelance platformalarda ishlash va ulardan loyihalar
-                        topish
-                    </h4>
-                    <div>
-                        <span class="w-32 bg-white opacity-20 h-px flex mt-6 mb-4"></span>
-                        <img src="img/device-laptop.png" width="48" alt="uic">
-                    </div>
+                <li class="bg-darkBlue-800 relative w-full group border border-white/8 p-5 pr-10 rounded-xl">
+                    <a href="frontend.html" class="flex items-center justify-between">
+                        <div class="relative flex flex-col items-start justify-start">
+                            <p class="font-medium text-base leading-130 opacity-80 pb-4">Kurs</p>
+                            <h4 class="text-xl text-center font-bold group-hover:text-blue duration-200 mb-6">
+                                Frontend Plus
+                            </h4>
+                            <p class="font-medium text-base leading-130 opacity-80">Davomiyligi: 6 oy</p>
+                        </div>
+                        <div>
+                            <img class=" grayscale duration-200 group-hover:grayscale-0" src="img/vue2.png"
+                                alt="Flutter Icon" width="45">
+                        </div>
+                    </a>
                 </li>
-                <li class="w-88 h-62 border border-white/8 p-6 rounded-xl flex flex-col justify-between">
-                    <h4 class="text-xl font-bold leading-140">Project management asoslarini mutaxasisidan o’rganish
-                    </h4>
-                    <div>
-                        <span class="w-32 bg-white opacity-20 h-px flex mt-6 mb-4"></span>
-                        <img src="img/presentation.png" width="48" alt="">
-                    </div>
+                <li class="bg-darkBlue-800 relative w-full group border border-white/8 p-5 pr-10 rounded-xl">
+                    <a href="frontend.html" class="flex items-center justify-between">
+                        <div class="relative flex flex-col items-start justify-start">
+                            <p class="font-medium text-base leading-130 opacity-80 pb-4">Kurs</p>
+                            <h4 class="text-xl text-center font-bold group-hover:text-blue duration-200 mb-6">
+                                Backend
+                            </h4>
+                            <p class="font-medium text-base leading-130 opacity-80">Davomiyligi: 6 oy</p>
+                        </div>
+                        <div>
+                            <img class=" grayscale duration-200 group-hover:grayscale-0" src="img/python2.png"
+                                alt="Flutter Icon" width="48">
+                        </div>
+                    </a>
                 </li>
-                <li class="w-88 h-62 border border-white/8 p-6 rounded-xl flex flex-col justify-between">
-                    <h4 class="text-xl font-bold leading-140">DevOPSlik asoslari: loyihangizni serverga o’rnatib
-                        berish, loyihani hackerlik hujumlaridan himoyalash
-                    </h4>
-                    <div>
-                        <span class="w-32 bg-white opacity-20 h-px flex mt-6 mb-4"></span>
-                        <img src="img/settings.png" width="48" alt="uic">
-                    </div>
+                <li class="bg-darkBlue-800 relative w-full group border border-white/8 p-5 pr-10 rounded-xl">
+                    <a href="frontend.html" class="flex items-center justify-between">
+                        <div class="relative flex flex-col items-start justify-start">
+                            <p class="font-medium text-base leading-130 opacity-80 pb-4">Kurs</p>
+                            <h4 class="text-xl text-center font-bold group-hover:text-blue duration-200 mb-6">
+                                Mobile Plus
+                            </h4>
+                            <p class="font-medium text-base leading-130 opacity-80">Davomiyligi: 6 oy</p>
+                        </div>
+                        <div>
+                            <img class="grayscale duration-200 group-hover:grayscale-0" src="img/phone.png"
+                                alt="Flutter Icon" width="65">
+                        </div>
+                    </a>
                 </li>
-                <li class="w-88 h-62 border border-white/8 p-6 rounded-xl flex flex-col justify-between">
-                    <h4 class="text-xl font-bold leading-140">SEO optimizatsiya qilib saytlarda savdoni oshirish
-                    </h4>
-                    <div>
-                        <span class="w-32 bg-white opacity-20 h-px flex mt-6 mb-4"></span>
-                        <img src="img/chart-donut.png" width="48" alt="uic">
-                    </div>
+                <li class="bg-darkBlue-800 relative w-full group border border-white/8  p-5 pr-10 rounded-xl">
+                    <a href="frontend.html" class="flex items-center justify-between">
+                        <div class="relative flex flex-col items-start justify-start">
+                            <p class="font-medium text-base leading-130 opacity-80 pb-4">Kurs</p>
+                            <h4 class="text-xl text-center font-bold group-hover:text-blue duration-200 mb-6">
+                                UI/UX Pro
+                            </h4>
+                            <p class="font-medium text-base leading-130 opacity-80">Davomiyligi: 6 oy</p>
+                        </div>
+                        <div>
+                            <img class=" grayscale duration-200 group-hover:grayscale-0" src="img/brush2.png"
+                                alt="Flutter Icon" width="55">
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
     </section>
+
     <footer class="bg-dark">
-        <div class="container pt-11">
-            <div class="flex justify-between pb-16">
-                <div>
+        <div class="container pt-11 md:mx-[1rem]">
+            <div class="grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-4 gap-5 justify-between pb-16">
+                <div class="flex flex-col items-center sm:items-start">
                     <a href="#index.html" class="flex items-center gap-5">
                         <img src="img/uic.png" width="112" alt="UIC Group">
                         <div>
@@ -308,7 +634,7 @@
                     </a>
                     <p class="pt-5.5">O‘z qadriyatlariga ega IT Akademiya.</p>
                 </div>
-                <ul>
+                <ul class="flex flex-col items-center sm:items-start">
                     <li class="pb-1">
                         <a href="#" class="font-medium leading-130 text-white">
                             Kurslar
@@ -320,20 +646,25 @@
                         </a>
                     </li>
                 </ul>
-                <div class="flex flex-col gap-6.5">
-                    <div class="flex gap-3 items-center">
-                        <img src="img/at-sign.png" width="24" alt="uic">
-                        <a class="text-white opacity-60 font-medium"
-                            href="mailto:info@uic.academy">info@uic.itacademy</a>
+                <div class="flex flex-col gap-6.5 md:col-span-2 items-center sm:items-start">
+                    <div class="flex flex-row sm:flex-col gap-x-3">
+                        <div class="flex gap-3 items-center">
+                            <img src="img/at-sign.png" width="24" alt="uic">
+                            <a class="text-white opacity-60 font-medium"
+                                href="mailto:info@uic.academy">info@uic.itacademy</a>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <img src="img/communication-phone-call.png" width="24" alt="uic">
+                            <a class="text-white opacity-60 font-medium" href="tel:+998338055995">+998 33 805 59 95</a>
+                        </div>
                     </div>
-                    <div class="flex gap-3 items-center">
-                        <img src="img/communication-phone-call.png" width="24" alt="uic">
-                        <a class="text-white opacity-60 font-medium" href="tel:+998338055995">+998 33 805 59 95</a>
-                    </div>
-                    <div class="flex gap-3 items-center gap-3.5 border border-white/16 px-4 py-1.5 rounded-xl">
-                        <img src="img/map.png" width="24" alt="uic">
-                        <p class="text-white leading-20 tracking-[0.03rem] opacity-60 font-medium">Toshkent sh,
-                            Yunusobod t, Adham Rahmat k, 15</p>
+                    <div
+                        class="flex gap-3 items-center justify-between gap-3.5 border border-white/16 px-4 py-1.5 rounded-xl">
+                        <div class="flex items-center gap-2">
+                            <img src="img/map.png" width="24" alt="uic">
+                            <p class="text-white leading-20 tracking-[0.03rem] opacity-60 font-medium">Toshkent sh,
+                                Yunusobod t, Adham Rahmat k, 15</p>
+                        </div>
                         <a class="text-white bg-white/16 px-2.5 py-1 rounded-md"
                             href="https://yandex.uz/maps/10335/tashkent/house/YkAYdAFnTUQFQFprfX91cH5gZA==/?ll=69.267904%2C41.340995&z=18">xaritada</a>
                     </div>
@@ -342,7 +673,8 @@
             <div>
             </div>
         </div>
-        <div class="container2 relative border-t border-white/10 flex items-center justify-between py-3.5">
+        <div
+            class="container2 relative border-t border-white/10 flex flex-col sm:flex-row gap-y-3 items-center justify-between py-3.5">
             <p class="opacity-60">© 2023 UIC IT Academy</p>
             <div class="flex items-center gap-4">
                 <a class="relative  before:text-xs before:content-[attr(data-tip)] before:absolute before:px-2 before:py-1 before:font-plexSans before:left-[50%] before:-top-2 before:w-max before:max-w-xs before:bg-dark-100 before:-translate-x-1/2 before:-translate-y-full before:bg-gray-100 before:text-white before:opacity-0 before:transition-all hover:before:opacity-100 "
@@ -372,7 +704,6 @@
                 </a>
             </div>
         </div>
-
     </footer>
 
 </body>
@@ -381,10 +712,20 @@
     tailwind.config = {
         theme: {
             extend: {
+                container: {
+                    padding: {
+                        DEFAULT: '1rem',
+                        sm: '1rem',
+                        lg: '1rem',
+                        xl: '1rem',
+                        '2xl': '3rem',
+                    },
+                },
                 colors: {
                     darkBlue: {
                         100: "#0F1C30",
                         200: "#596779",
+                        600: "#1A1E24",
                         700: "#242731",
                         800: "#191E27",
                         900: "#12161C",
@@ -392,7 +733,8 @@
                     },
                     dark: {
                         DEFAULT: "#0D1014",
-                        100: "#111111"
+                        100: "#111111",
+                        200: "#111519"
                     },
                     white: {
                         DEFAULT: "#FFF",
@@ -410,9 +752,10 @@
                     }
                 },
                 gap: {
-                    "6.5": "26px"
+                    6.5: "26px"
                 },
                 height: {
+                    5.5: '22px',
                     18: "70px",
                     24: '88px',
                     30: '116px',
@@ -460,6 +803,7 @@
                     "6.5": "26px",
                     "7.5": "30px",
                     "9.5": "38px",
+                    16: "66px",
                     18: "72px",
                     22: "83px",
                     23: "85px",
