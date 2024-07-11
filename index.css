@@ -51,17 +51,40 @@ h3, h4, p {
 }
 
 .animation-list {
-    position: relative;
-    display: flex;
-    flex-shrink: 0;
+    display: grid;
     gap: 12px;
-    justify-content: space-around;
-    min-width: 100;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 8));
     /* display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) -12px); */
     overflow: hidden;
+    min-width: 100%;
 }
+
+@media only screen and (max-width: 1200px) {
+    .animation-list {
+        grid-auto-columns: calc((100% / 4));
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .animation-list {
+        grid-auto-columns: calc((100% / 3));
+    }
+}
+@media only screen and (max-width: 568px) {
+    .animation-list {
+        grid-auto-columns: calc((100% / 2));
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .animation-list {
+        grid-auto-columns: calc((100% / 1));
+    }
+}
+
 
 .animation-list li {
     animation: animate var(--t) linear infinite;

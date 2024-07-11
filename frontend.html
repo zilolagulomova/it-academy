@@ -12,18 +12,28 @@
 
 <body class="relative">
     <!-- hero -->
+    <div class="bg-[#0e1014] w-full h-screen overflow-hidden -translate-x-full duration-300 hamburger absolute z-[9999]">
+        <button
+            class="absolute hidden pl-1.5 z-[99] top-[6%] left-[3%] xl:hidden closeBtn group hover:bg-white/30 duration-30 bg-white/20 rounded-10 w-[36px] h-[36px]">
+            <img class="" src="img/closebtn.svg"  alt="">
+        </button>
+        <div class="container2 mt-28">
+            <p class="group-hover:text-blue pb-4 duration-300 text-sm font-semibold leading-5 border-b border-white/20">Kurslar
+            </p>
+        </div>
+    </div>
 
     <div class="bg-darkBlue-950 flex flex-col items-center justify-between">
         <header class="header bg-dark/20 backdrop-blur-smm border-b border-white/10 z-[999] w-full fixed">
-            <div class="container relative flex items-center py-4 py-5.5 justify-between py-4">
+            <div class="container menu relative flex items-center py-4 py-5.5 justify-between py-4">
                 <!-- menu button -->
-                <div class="xl:hidden menuBtn flex flex-col group hover:bg-white/30 duration-300 items-start justify-center items-center  bg-white/20 rounded-10 w-[36px] h-[36px]">
-                    <button class="flex flex-col gap-y-1">
-                        <div class="bg-white w-[11px] rounded h-[2px] group-hover:w-[16px] duration-300"></div>
-                        <div class="bg-white w-[19px] rounded h-[2px]"></div>
-                        <div class="bg-white w-[16px] rounded h-[2px] group-hover:w-[11px] duration-300"></div>
-                    </button>
-                </div>
+                    <div class="xl:hidden flex flex-col menuBtn group hover:bg-white/30 duration-300 items-start justify-center items-center  bg-white/20 rounded-10 w-[36px] h-[36px]">
+                        <button class="flex flex-col gap-y-1">
+                            <div class="bg-white w-[11px] rounded h-[2px] group-hover:w-[16px] duration-300"></div>
+                            <div class="bg-white w-[19px] rounded h-[2px]"></div>
+                            <div class="bg-white w-[16px] rounded h-[2px] group-hover:w-[11px] duration-300"></div>
+                        </button>
+                    </div>
                 <!-- katigoriya button -->
                 <button class="flex items-center gap-2.5 group hidden xl:flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -41,7 +51,7 @@
                 </button>
                 <!-- uic logo mobile-->
                 <a href="#index.html"
-                    class="block shadow-4xl absolute left-2/4 -translate-x-2/4 top-1 md:hidden bg-dark-200 h-[110px] w-[110px] border border-white/10 rounded-full flex items-center justify-center">
+                    class="block shadow-4xl absolute left-2/4 -translate-x-2/4 top-0 md:hidden bg-dark-200 h-[110px] w-[110px] border border-white/10 rounded-full flex items-center justify-center">
                     <img width="76" src="img/logo-mobile.svg" alt="">
                 </a>
                 <!-- uic logo desktop-->
@@ -50,9 +60,9 @@
                 </a>
                 <!-- mobile phone / call button -->
                 <div class="flex items-center gap-1 lg:hidden">
-                    <button class="bg-transparent border border-white/20 rounded-lg py-2.5 px-3 ">
+                    <a href="#applyForm" class="bg-transparent border border-white/20 rounded-lg py-2.5 px-3 ">
                         <img src="img/message.svg" alt="">
-                    </button>
+                    </a>
                     <a href="#applyForm" class="phone bg-blue px-3 py-2.5 rounded-lg">
                         <img src="img/phone2.svg" alt="">
                     </a>
@@ -64,7 +74,7 @@
                         <img src="img/call-outline.png" alt="">
                         <p class="text-sm font-semibold hidden xl:block leading-5">+998 33 805 59 95</p>
                     </a>
-                    <a href="#applyForm" class="phone bg-blue px-6 py-2.5 rounded-xl">
+                    <a href="#applyForm" class="phone pointer-events-none relative bg-blue px-6 py-2.5 rounded-xl">
                         <button type="button" class="text-sm text-white font-medium leading-5">
                             Ariza qoldirish
                         </button>
@@ -706,143 +716,145 @@
         </div>
     </footer>
 
-</body>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                container: {
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        padding: {
+                            DEFAULT: '1rem',
+                            sm: '1rem',
+                            lg: '1rem',
+                            xl: '1rem',
+                            '2xl': '3rem',
+                        },
+                    },
+                    colors: {
+                        darkBlue: {
+                            100: "#0F1C30",
+                            200: "#596779",
+                            600: "#1A1E24",
+                            700: "#242731",
+                            800: "#191E27",
+                            900: "#12161C",
+                            950: "#080A0C"
+                        },
+                        dark: {
+                            DEFAULT: "#0D1014",
+                            100: "#111111",
+                            200: "#111519"
+                        },
+                        white: {
+                            DEFAULT: "#FFF",
+                            100: "#ffffff29",
+                            200: "#E2E7EB0A"
+                        },
+                        blue: {
+                            DEFAULT: "#1d71ee",
+                            100: "#98a9b5"
+                        },
+                        gray: {
+                            DEFAULT: "#6C6E70",
+                            100: "#2e3134",
+                            200: "#6A6A6C",
+                        }
+                    },
+                    gap: {
+                        6.5: "26px"
+                    },
+                    height: {
+                        5.5: '22px',
+                        18: "70px",
+                        24: '88px',
+                        30: '116px',
+                        37: '143px',
+                        40: '152px',
+                        42: '173px',
+                        50: '196px',
+                        58: '228px',
+                        62: '251px',
+                        100: "850px"
+                    },
+                    width: {
+                        13: "50px",
+                        18: "70px",
+                        42: "162px",
+                        63: '253px',
+                        88: "344px"
+                    },
+                    maxWidth: {
+                        68: "283px",
+                        88: "344px",
+                    },
+                    spacing: {
+                        40: '40%',
+                    },
+                    opacity: {
+                        4: '0.04',
+                        12: '0.12',
+                        16: '0.16',
+                        8: '0.08',
+                        7: '0.07',
+                        78: '0.78',
+                    },
+                    backdropBlur: {
+                        smm: '6px',
+                    },
+                    boxShadow: {
+                        '4xl': '0 4px 30px rgba(29, 113, 238, 0.2)',
+                        '5xl': '0 4px 30px #1d71ee6e',
+                    },
                     padding: {
-                        DEFAULT: '1rem',
-                        sm: '1rem',
-                        lg: '1rem',
-                        xl: '1rem',
-                        '2xl': '3rem',
+                        "xll": "21.235px",
+                        "4.5": "18px",
+                        "5.5": "22px",
+                        "6.5": "26px",
+                        "7.5": "30px",
+                        "9.5": "38px",
+                        16: "66px",
+                        18: "72px",
+                        22: "83px",
+                        23: "85px",
+                        30: "126px",
+                        68: "285px"
                     },
-                },
-                colors: {
-                    darkBlue: {
-                        100: "#0F1C30",
-                        200: "#596779",
-                        600: "#1A1E24",
-                        700: "#242731",
-                        800: "#191E27",
-                        900: "#12161C",
-                        950: "#080A0C"
+                    margin: {
+                        54: "216px",
                     },
-                    dark: {
-                        DEFAULT: "#0D1014",
-                        100: "#111111",
-                        200: "#111519"
+                    lineHeight: {
+                        '4.5': "18px",
+                        130: "130%",
+                        126: "126.5%",
+                        140: "140%",
+                        148: "148%"
                     },
-                    white: {
-                        DEFAULT: "#FFF",
-                        100: "#ffffff29",
-                        200: "#E2E7EB0A"
+                    letterSpacing: {
+                        "tightest": "0.4px"
                     },
-                    blue: {
-                        DEFAULT: "#1d71ee",
-                        100: "#98a9b5"
+                    fontSize: {
+                        '2.5xl': "28px",
+                        '3.5xl': "32px",
+                        '4.5xl': "40px",
+                        '4.8xl': "44px",
+                        '5.5xl': "54px",
+                        '6.5xl': "64px",
+                        '7xl': "96px",
+                        '8.5xl': "98px"
                     },
-                    gray: {
-                        DEFAULT: "#6C6E70",
-                        100: "#2e3134",
-                        200: "#6A6A6C",
+                    fontFamily: {
+                        NeoTechStdBold: "NeoTechStd-Bold"
+                    },
+                    borderRadius: {
+                        10: "10px",
+                        "2.5xl": "20px"
                     }
-                },
-                gap: {
-                    6.5: "26px"
-                },
-                height: {
-                    5.5: '22px',
-                    18: "70px",
-                    24: '88px',
-                    30: '116px',
-                    37: '143px',
-                    40: '152px',
-                    42: '173px',
-                    50: '196px',
-                    58: '228px',
-                    62: '251px',
-                    100: "850px"
-                },
-                width: {
-                    13: "50px",
-                    18: "70px",
-                    42: "162px",
-                    63: '253px',
-                    88: "344px"
-                },
-                maxWidth: {
-                    68: "283px",
-                    88: "344px",
-                },
-                spacing: {
-                    40: '40%',
-                },
-                opacity: {
-                    4: '0.04',
-                    12: '0.12',
-                    16: '0.16',
-                    8: '0.08',
-                    7: '0.07',
-                    78: '0.78',
-                },
-                backdropBlur: {
-                    smm: '6px',
-                },
-                boxShadow: {
-                    '4xl': '0 4px 30px rgba(29, 113, 238, 0.2)',
-                    '5xl': '0 4px 30px #1d71ee6e',
-                },
-                padding: {
-                    "xll": "21.235px",
-                    "4.5": "18px",
-                    "5.5": "22px",
-                    "6.5": "26px",
-                    "7.5": "30px",
-                    "9.5": "38px",
-                    16: "66px",
-                    18: "72px",
-                    22: "83px",
-                    23: "85px",
-                    30: "126px",
-                    68: "285px"
-                },
-                margin: {
-                    54: "216px",
-                },
-                lineHeight: {
-                    '4.5': "18px",
-                    130: "130%",
-                    126: "126.5%",
-                    140: "140%",
-                    148: "148%"
-                },
-                letterSpacing: {
-                    "tightest": "0.4px"
-                },
-                fontSize: {
-                    '2.5xl': "28px",
-                    '3.5xl': "32px",
-                    '4.5xl': "40px",
-                    '4.8xl': "44px",
-                    '5.5xl': "54px",
-                    '6.5xl': "64px",
-                    '7xl': "96px",
-                    '8.5xl': "98px"
-                },
-                fontFamily: {
-                    NeoTechStdBold: "NeoTechStd-Bold"
-                },
-                borderRadius: {
-                    10: "10px",
-                    "2.5xl": "20px"
                 }
             }
         }
-    }
-</script>
+    </script>
+    <script src="js/index.js"></script>
+
+</body>
 
 </html>

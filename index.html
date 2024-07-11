@@ -12,8 +12,15 @@
 
 <body class="relative">
     <!-- hero -->
-    <div class="bg-[#0e1014] w-full h-screen overflow-hidden -translate-x-full duration-300 hamburger absolute z-[999999]">
-
+    <div class="bg-[#0e1014] w-full h-screen overflow-hidden -translate-x-full duration-300 hamburger absolute z-[9999]">
+        <button
+            class="absolute hidden pl-1.5 z-[99] top-[6%] left-[3%] xl:hidden closeBtn group hover:bg-white/30 duration-30 bg-white/20 rounded-10 w-[36px] h-[36px]">
+            <img class="" src="img/closebtn.svg"  alt="">
+        </button>
+        <div class="container2 mt-28">
+            <p class="group-hover:text-blue pb-4 duration-300 text-sm font-semibold leading-5 border-b border-white/20">Kurslar
+            </p>
+        </div>
     </div>
 
     <main class="">
@@ -21,21 +28,16 @@
             class="bg-[url('img/hero-bg.jpg')] pb-30 flex flex-col items-center justify-between bg-center bg-cover bg-no-repeat relative">
             <div class="overlay h-100 bg-darkBlue-100/90 mix-blend-hard-light z-1 absolute w-full"></div>
             <div class=" bg-gradient-to-b h-100 top-0 w-full from-[#12161C]/0 to-[#12161C]/80 absolute"></div>
-            <header class="header bg-dark/20 backdrop-blur-smm border-b border-white/10 z-[999999] w-full fixed">
-                <div class="container relative flex items-center py-4 py-5.5 justify-between py-4">
+            <header class="header bg-dark/20 backdrop-blur-smm border-b border-white/10 z-[999] w-full fixed">
+                <div class="container menu relative flex items-center py-4 py-5.5 justify-between py-4">
                     <!-- menu button -->
-                    <div
-                        class="xl:hidden menuBtn flex flex-col group hover:bg-white/30 duration-300 items-start justify-center items-center  bg-white/20 rounded-10 w-[36px] h-[36px]">
-                        <button
-                            class="absolute z-[9999] top-[29.5%] left-[2%] xl:hidden closeBtn flex flex-col group hover:bg-white/30 duration-300 items-start justify-center items-center  bg-white/20 rounded-10 w-[36px] h-[36px]">
-                            <img src="img/closebtn.svg" alt="">
-                        </button>
-                        <button class="flex flex-col gap-y-1">
-                            <div class="bg-white w-[11px] rounded h-[2px] group-hover:w-[16px] duration-300"></div>
-                            <div class="bg-white w-[19px] rounded h-[2px]"></div>
-                            <div class="bg-white w-[16px] rounded h-[2px] group-hover:w-[11px] duration-300"></div>
-                        </button>
-                    </div>
+                        <div class="xl:hidden flex flex-col menuBtn group hover:bg-white/30 duration-300 items-start justify-center items-center  bg-white/20 rounded-10 w-[36px] h-[36px]">
+                            <button class="flex flex-col gap-y-1">
+                                <div class="bg-white w-[11px] rounded h-[2px] group-hover:w-[16px] duration-300"></div>
+                                <div class="bg-white w-[19px] rounded h-[2px]"></div>
+                                <div class="bg-white w-[16px] rounded h-[2px] group-hover:w-[11px] duration-300"></div>
+                            </button>
+                        </div>
                     <!-- katigoriya button -->
                     <button class="flex items-center gap-2.5 group hidden xl:flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -85,7 +87,7 @@
                 </div>
             </header>
             <div class="pt-68 relative container2">
-                <p class="leading-148 text-center text-xl font-medium relative z-[99999]">13 yillik tajriba, 200dan
+                <p class="leading-148 text-center text-xl font-medium relative z-[1]">13 yillik tajriba, 200dan
                     ortiq loyihalar,
                 </p>
                 <p class="leading-148 text-center text-xl font-medium">9 yil xalqaro IT loyihalar bilan ishlash
@@ -383,10 +385,8 @@
                 </div>
             </div>
             <ul class="pb-12 animation-list" style="--t:45s">
-                <div class="linearLeft lg:block hidden"></div>
-                <div class="linearRight lg:block hidden"></div>
                 <li class="rounded-xl w-full max-w-63 flex flex-col items-center gap-4 border border-white/10">
-                    <img class="rounded-t-xl" src="img/asadbekimage.jpg" width="253" alt="Asadbek Sobirjonov">
+                    <img class="rounded-t-xl" src="img/asadbekimage.jpg" width="100%" alt="Asadbek Sobirjonov">
                     <div class="mx-4 mb-8">
                         <h4 class="text-xl font-extrabold leading-130 mb-2">Asadbek Sobirjonov</h4>
                         <p class="text-xs leading-130 opacity-70">
@@ -396,7 +396,7 @@
                     </div>
                 </li>
                 <li class="rounded-xl w-full max-w-63 flex flex-col items-center gap-4 border border-white/10">
-                    <img class="rounded-t-xl" src="img/fazliddinimage.jpg" width="253" alt="Fazliddin G'oyibnazarov">
+                    <img class="rounded-t-xl" src="img/fazliddinimage.jpg" width="100%" alt="Fazliddin G'oyibnazarov">
                     <div class="mx-4 mb-8">
                         <h4 class="text-xl font-extrabold leading-130 mb-2">Fazliddin G'oyibnazarov</h4>
                         <p class="text-xs leading-130 opacity-70">
@@ -406,7 +406,7 @@
                     </div>
                 </li>
                 <li class="rounded-xl w-full max-w-63 flex flex-col items-center gap-4 border border-white/10">
-                    <img class="rounded-t-xl" src="img/asadbekimage.jpg" width="253" alt="Asadbek Sobirjonov">
+                    <img class="rounded-t-xl" src="img/asadbekimage.jpg" width="100%" alt="Asadbek Sobirjonov">
                     <div class="mx-4 mb-8">
                         <h4 class="text-xl font-extrabold leading-130 mb-2">Asadbek Sobirjonov</h4>
                         <p class="text-xs leading-130 opacity-70">
@@ -416,7 +416,7 @@
                     </div>
                 </li>
                 <li class="rounded-xl w-full max-w-63 flex flex-col items-center gap-4 border border-white/10">
-                    <img class="rounded-t-xl" src="img/temurbek.jpg" width="253" alt="Temurbek Botirov">
+                    <img class="rounded-t-xl" src="img/temurbek.jpg" width="100%" alt="Temurbek Botirov">
                     <div class="mx-4 mb-8">
                         <h4 class="text-xl font-extrabold leading-130 mb-2">Temurbek Botirov</h4>
                         <p class="text-xs leading-130 opacity-70">
@@ -425,7 +425,7 @@
                     </div>
                 </li>
                 <li class="rounded-xl w-full max-w-63 flex flex-col items-center gap-4 border border-white/10">
-                    <img class="rounded-t-xl" src="img/yahyo.jpg" width="253" alt="Yahyo 
+                    <img class="rounded-t-xl" src="img/yahyo.jpg" width="100%" alt="Yahyo
                     Mashrabov">
                     <div class="mx-4 mb-8">
                         <h4 class="text-xl font-extrabold leading-130 mb-2">Yahyo
@@ -436,7 +436,7 @@
                     </div>
                 </li>
                 <li class="rounded-xl w-full max-w-63 flex flex-col items-center gap-4 border border-white/10">
-                    <img class="rounded-t-xl" src="img/asadbekimage.jpg" width="253" alt="Asadbek Sobirjonov">
+                    <img class="rounded-t-xl" src="img/asadbekimage.jpg" width="100%" alt="Asadbek Sobirjonov">
                     <div class="mx-4 mb-8">
                         <h4 class="text-xl font-extrabold leading-130 mb-2">Asadbek Sobirjonov</h4>
                         <p class="text-xs leading-130 opacity-70">
@@ -446,7 +446,7 @@
                     </div>
                 </li>
                 <li class="rounded-xl w-full max-w-63 flex flex-col items-center gap-4 border border-white/10">
-                    <img class="rounded-t-xl" src="img/temurbek.jpg" width="253" alt="Temurbek Botirov">
+                    <img class="rounded-t-xl" src="img/temurbek.jpg" width="100%" alt="Temurbek Botirov">
                     <div class="mx-4 mb-8">
                         <h4 class="text-xl font-extrabold leading-130 mb-2">Temurbek Botirov</h4>
                         <p class="text-xs leading-130 opacity-70">
